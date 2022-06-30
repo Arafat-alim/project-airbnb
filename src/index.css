@@ -10,6 +10,13 @@ body {
   /* background-color: blueviolet; */
 }
 
+.grey {
+  color: #918e9b;
+}
+
+.bold {
+  font-weight: bold;
+}
 nav {
   height: 70px;
   display: flex;
@@ -42,4 +49,24 @@ section {
 
 .hero--text {
   margin-top: 0;
+}
+
+.card {
+  background-color: aqua;
+  width: 175px;
+  font-size: 12px;
+}
+
+.card--photo {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 14px;
 }
