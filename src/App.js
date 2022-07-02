@@ -2,13 +2,11 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import katie from "./images/katie-zaferes.png";
-import { capName, sq, para } from "./challenge/arrayMap";
-import ComponentChallenge from "./challenge/ComponentChallenge";
+
+import jokerAPI from "./challenge/jokerAPI";
+import Jokes from "./challenge/Jokes";
 
 function App() {
-  console.log(capName);
-  console.log(sq);
-  console.log(para);
   /* Challenge: Pass props to the Card component and display that data
 
 - img ("katie-zaferes.png")
@@ -17,6 +15,12 @@ function App() {
 - country (Whatever you want)
 - title ("Life Lessons with Katie Zaferes")
 - price (136) */
+
+  // practice challenge
+  const jokesElement = jokerAPI.map((joke) => {
+    return <Jokes setup={joke.setup} punchline={joke.punchline} />;
+  });
+
   return (
     <div className="App">
       <Navbar />
@@ -29,7 +33,7 @@ function App() {
         title={"Life Lessons with Katie Zaferes"}
         price={165}
       />
-      <ComponentChallenge />
+      {jokesElement}
     </div>
   );
 }
