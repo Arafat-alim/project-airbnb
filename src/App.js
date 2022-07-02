@@ -2,8 +2,12 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import katie from "./images/katie-zaferes.png";
+import { capName, sq, para } from "./challenge/arrayMap";
 
 function App() {
+  console.log(capName);
+  console.log(sq);
+  console.log(para);
   /* Challenge: Pass props to the Card component and display that data
 
 - img ("katie-zaferes.png")
