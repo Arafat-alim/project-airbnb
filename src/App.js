@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import katie from "./images/katie-zaferes.png";
 import { capName, sq, para } from "./challenge/arrayMap";
+import ComponentChallenge from "./challenge/ComponentChallenge";
 
 function App() {
   console.log(capName);
@@ -28,6 +29,7 @@ function App() {
         title={"Life Lessons with Katie Zaferes"}
         price={165}
       />
+      <ComponentChallenge />
     </div>
   );
 }
