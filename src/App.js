@@ -1,7 +1,6 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
-import katie from "./images/katie-zaferes.png";
 import data from "./data";
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      {cards}
+      <section className="cards--list">{cards}</section>
     </div>
   );
 }

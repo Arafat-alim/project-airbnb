@@ -13,8 +13,8 @@ export default function Card(props) {
         <span className="grey">({props.reviewCount}) • </span>
         <span>{props.country}</span>
       </div>
-      <p>{props.title}</p>
-      <p>
+      <p classaName="card--title">{props.title}</p>
+      <p className="card--price">
         <span className="bold">From ${props.price}</span> / person
       </p>
     </div>
