@@ -3,7 +3,7 @@ import React from "react";
 import star from "../images/star.png";
 
 export default function Card(props) {
-  console.log(props.item.title);
+  console.log(props);
   let badgeText;
   if (props.item.openSpots === 0) {
     badgeText = "SOLD OUT";
